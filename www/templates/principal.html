@@ -1,0 +1,37 @@
+
+ <ion-nav-bar class="bar-positive">
+ </ion-nav-bar>
+<ion-view view-title="{{titulovista}}">
+  <ion-tabs class="tabs-icon-top tabs-positive">
+    
+    <ion-tab title="Principal App" icon="ion-home" href="#/principal/tablero">
+    </ion-tab>
+    
+<!--     <ion-tab title="Alumno" icon="ion-earth" href="#/principal/alumno">
+      <ion-nav-view name="public-tab"></ion-nav-view>
+    </ion-tab> -->
+<!--     
+    <ion-tab title="Profesor" icon="ion-nuclear" href="#/principal/profesor">
+      <ion-nav-view name="admin-tab"></ion-nav-view>
+    </ion-tab>  -->
+
+    <ion-tab title="{{menu.menu}}" icon="{{menu.icon}}" href="#/principal{{menu.hrefe}}"  ng-repeat='menu in  menus'>
+    </ion-tab>
+  </ion-tabs>
+<ion-nav-view name="content" class="content-holder"></ion-nav-view>
+<!-- 
+<ion-content>
+    <ion-list>
+      <ion-item ng-repeat="grupo in grupos"    href="#/app/{{grupo.ira}}" >
+        {{grupo.nombre}}
+      </ion-item>
+      <ion-item ng-repeat="grupo in grupos" href="#/app/grupos/{{grupo.id}}"  ng-click="login({{grupo.id}})">
+        {{grupo.nombre}}
+      </ion-item>
+
+ ng-click="login({{grupo.id}})"
+      
+    </ion-list>
+  </ion-content>
+<!-- 
+</ion-view> -->

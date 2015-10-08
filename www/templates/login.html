@@ -1,0 +1,90 @@
+
+<ion-view  class="signup-background" >
+ 
+<ion-modal-view >
+    
+  <ion-header-bar>
+    <ul bn-demo>
+        <!-- Dynamically populated. -->
+    </ul>
+     
+      <h1 class="title" >  {{titulovista}}</h1>
+<!--      <div class="tittleimage" >
+        <img  src="../img/ensenanza.png"/>     
+      </div>-->
+<!--     <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Cerrar</button>
+    </div> -->
+  </ion-header-bar>
+  <ion-content  class="backlogin">
+<!--   <h1>{{mensaje}}</h1> -->
+    <form ng-submit="doLogin(data)">
+      <div class="list" >
+<!--                <label class="item item-input item-select ">
+                  <div class="tittleimage" >
+        <img  src="../img/ensenanza.png"/>     
+      </div>
+                      <select ng-model="data.rol">
+                        <option selected value=''>&#128697;---</option>
+                        <option value='{{ value }}' ng-repeat="(key, value) in roles" >&#128697;{{key}}</option>
+                      </select>
+                </label>-->
+<!--   <div class="input-label ">
+                     Elija su Rol
+   </div>-->
+
+<!--<label class="item item-input ">
+
+</label>-->
+<!--<img id="hola" src="../img/educado.png" height="50" width="50"/>-->
+
+<!--
+<label class="radio "  ng-repeat="(key, value) in roles" >
+      <a  ng-class="{{value}}" href="#">
+      </a>
+
+      <input type="radio" name="group" ng-model="data.rol"  value="{{ value }}"  >
+    <div class="item-content ion-menu" >
+     <img ng-src="../img/{{value}}.png" height="50" width="50"/>
+        {{key}}
+    </div>
+      <br/>
+<i class="radio-icon" >{{key}}</i>
+ </label>-->
+
+
+
+<!--<label class="radio "  ng-repeat="(key, value) in roles" >
+      <a  class="{{value}}" href="#">
+          ad
+      </a>
+      <input type="radio" name="group" ng-model="data.rol"  value="{{ value }}" >
+      
+    <div class="item-content ion-menu" >
+     <img ng-src="../img/{{value}}.png" height="50" width="50"/>
+        {{key}}
+    </div>
+    
+    <i class="radio-icon">{{key}}</i>
+  </label>-->
+
+          
+          
+        <label class="item item-input">
+<!--          <span class="input-label">Usuario</span>-->
+          <input type="text" ng-model="data.username" placeholder="&#128272; Usuario" >
+        </label>
+        <label class="item item-input">
+<!--          <span class="input-label">Contraseña</span>-->
+          <input type="password" ng-model="data.password" placeholder="&#128273; Contraseña">
+        </label>
+<!--   <h1 ng-click="pana()"> hi sock</h1> -->
+
+        <label class="item">
+          <button class="button button-block button-full" type="submit">Ingresar</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view> 
+  </ion-view>

@@ -1,0 +1,60 @@
+<ion-side-menus enable-menu-with-back-views="false" >
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left">
+<!--    <ion-header-bar class="bar-stable">
+      <h1 class="title icon ion-menu ">Menú</h1>
+    </ion-header-bar>-->
+    <ion-content>
+      <ion-list>
+<!--          <user-Info  info="{{titulovista}}"></user-Info>-->
+       <ion-item   href="" class="icon-left" ng-repeat="usuario in  usuarios" >
+<!--           <li> {{meme.institucion}}</li>-->
+             <user-info info="usuario"></user-info>
+        </ion-item>
+       <ion-item menu-close ng-click="irinicio()">
+           <i class="ion-ios-home"></i>
+          Principal
+        </ion-item>
+
+<!--        <button  ng-click="irinicio()">Inicio</button> -->
+<!--         <ion-item menu-close href="#/app/search">
+          Busqueda
+        </ion-item>
+        <ion-item menu-close href="#/app/educacion">
+          Educación
+        </ion-item> -->
+ <!--         <ion-item menu-close href="#/app/grupos" ng-repeat='menu in menus'>
+          Escoja el Grupo
+        </ion-item>
+        <ion-item menu-close href="#/app/appInfo">
+          App Info
+        </ion-item> -->
+<!--       <ion-item  href="#/principal{{menu.hrefe}}"  ng-repeat='menu in  menus'>
+      {{menu.menu}}
+      </ion-item> -->
+  
+      <ion-item   menu-close href="#/principal{{menu.hrefe}}"   ng-repeat="menu in  menus | orderBy:'menu'"  class="item" >
+       <i class="{{menu.cssclass}}"></i>
+          {{menu.menu}}
+      </ion-item>
+
+
+       <ion-item menu-close ng-click="logout()" class="icon-left ion-log-out button-stable">
+          Cerrar Sesión
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

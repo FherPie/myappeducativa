@@ -1,0 +1,22 @@
+<!--<ion-view view-title="{{info.rol}}">
+  <ion-content>
+   <img class="icon" ng-src="{{ app.icon }}">  -->
+
+<!--<p>User Info</p>-->
+<a ui-sref="principal.mensaje({id:{$index}})">
+    {{$index}}
+  <p class="developer">Fecha: {{ info.fechaenvio |  date:'yyyy-MM-dd' }}</p>  
+ 
+
+  <h2 class="title">Asunto:{{ info.asunto }}</h2> 
+  <p class="developer">Remitente: {{ info.nombreremitente}}</p>
+  <h2 class="title">{{ info.apellidos }}</h2>
+  <h2 class="title">{{ info.userid }}</h2> 
+
+  <p class="developer">{{ info.email }}</p> 
+  
+  </a>
+  
+  
+<!--  </ion-content>
+</ion-view>-->

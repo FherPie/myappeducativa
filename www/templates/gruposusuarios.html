@@ -1,0 +1,31 @@
+<ion-view view-title="Grupos Usuarios">
+  <ion-content>
+      
+    <ion-list>
+      <ion-item ng-repeat="(key, value) in roles" >
+      <a  ui-sref="principal.tablero">
+          <img ng-src="../img/{{value}}.png" height="50" width="50"/>
+      {{key}}
+      </a>
+      </ion-item>
+    </ion-list>
+
+<!--<label class="radio "  ng-repeat="(key, value) in roles" >
+   
+
+      <input type="radio" name="group" ng-model="data.rol"  value="{{ value }}"  >
+    <div class="item-content ion-menu" >
+     <img ng-src="../img/{{value}}.png" height="50" width="50"/>
+        {{key}}
+    </div>
+      <br/>
+<i class="radio-icon" >{{key}}</i>
+</label>-->
+      
+      
+      
+      
+  </ion-content>
+</ion-view>
+
+

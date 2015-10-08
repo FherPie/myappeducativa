@@ -1,0 +1,29 @@
+<!-- <ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view> -->
+<ion-view view-title="{{titulovista}}" ng-controller="mensajesnoleidosCtrl">
+  <ion-content>
+    <ion-list>
+   
+      <ion-item ng-repeat="mensaje in mensajes"    >
+          <mensaje-Noleido info="mensaje"></mensaje-Noleido>
+      </ion-item>
+         
+<!--       <ion-item ng-repeat="grupo in grupos" href="#/app/grupos/{{grupo.id}}"  ng-click="login({{grupo.id}})">
+        {{grupo.nombre}}
+      </ion-item>
+
+ ng-click="login({{grupo.id}})"
+       -->
+    </ion-list>
+      <div ng-click="mensajesnoleidosCtrl.pay">
+       hoalra
+      </div>
+  </ion-content>
+</ion-view>

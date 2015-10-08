@@ -1,0 +1,30 @@
+<ion-view view-title="{{titulovista}}"  >
+<!--   <ion-nav-buttons side="right">
+    <button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
+  </ion-nav-buttons> -->
+  
+  <ion-content class="padding  signup-background">
+    <div class="row"><div class="col text-center ">
+        <ion-item   href="" class="icon-left" ng-repeat="usuario in  usuarios" >
+           <li> {{usuario.institucion}}</li>
+<!--             <user-info info="usuario"></user-info>-->
+        </ion-item>  
+            
+            
+       <h3 class="title">Welcome {{username}}!</h3> 
+
+      <br><br><br>
+      <button class="button button-full button-positive" ng-click="performValidRequest()">
+        Mis Cosas
+      </button>
+      <button class="button button-full button-energized" ng-click="performUnauthorizedRequest()">
+        Horarios
+      </button>
+      <button class="button button-full button-assertive" ng-click="performInvalidRequest()">
+        Profesores
+      </button> 
+      <br><br>
+      {{response}}
+    </div></div>
+  </ion-content>
+</ion-view>
